@@ -1,0 +1,3 @@
+- [x] Deploy FE
+- [ ] Deploy BE (Pending by I don't have a host. You can pull code and add env to run local)
+- [ ] Add domain
