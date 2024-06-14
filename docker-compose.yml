@@ -1,0 +1,20 @@
+﻿version: '3.8'
+
+services:
+  frontend:
+    image: vn-pay-fe:local
+    # env_file: ./.envs/fe.env
+    build:
+      context: ./fe-vnpay
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    image: vn-pay-be:local
+    env_file: ./.envs/be.env
+    build:
+      context: ./be-vnpay
+    ports:
+      - "3001:3001"

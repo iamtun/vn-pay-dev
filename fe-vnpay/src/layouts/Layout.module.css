@@ -1,0 +1,13 @@
+﻿.container {
+  min-height: 100dvh;
+
+  .content {
+    min-height: calc(100dvh - 64px - 100px) !important;
+    padding: 24px !important;
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
