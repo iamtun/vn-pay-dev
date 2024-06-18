@@ -4,10 +4,9 @@ import React from 'react';
 import styles from './Order.module.css';
 
 const OrderPage: React.FC = () => {
-  console.log({ VITE_BACKEND_URL: import.meta.env.VITE_BACKEND_URL });
   const onFinish = (values: {
     amount: number;
-    'payment-method': string;
+    'bank_code': string;
     languages: string;
   }) => {
     const data = {
@@ -42,7 +41,7 @@ const OrderPage: React.FC = () => {
         <Form.Item label="Số tiền" name={'amount'}>
           <Input placeholder="Nhập số tiền" type="number" />
         </Form.Item>
-        <Form.Item name="bankCode" label="Chọn Phương thức thanh toán:">
+        <Form.Item name="bank_code" label="Chọn Phương thức thanh toán:">
           <Radio.Group>
             <Radio value="">Cổng thanh toán VNPAYQR</Radio>
             <Radio value="VNBANK">
